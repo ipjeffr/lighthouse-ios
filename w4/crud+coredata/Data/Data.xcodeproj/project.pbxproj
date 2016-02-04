@@ -14,10 +14,6 @@
 		9A011A531C62DA77005A5E2E /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A011A511C62DA77005A5E2E /* Data.xcdatamodeld */; };
 		9A011A551C62DA77005A5E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A011A541C62DA77005A5E2E /* Assets.xcassets */; };
 		9A011A581C62DA77005A5E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A011A561C62DA77005A5E2E /* LaunchScreen.storyboard */; };
-		9A6354B01C63AA0300144593 /* Address+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6354A91C63AA0300144593 /* Address+CoreDataProperties.m */; };
-		9A6354B11C63AA0300144593 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6354AB1C63AA0300144593 /* Address.m */; };
-		9A6354B21C63AA0300144593 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6354AD1C63AA0300144593 /* Person+CoreDataProperties.m */; };
-		9A6354B31C63AA0300144593 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6354AF1C63AA0300144593 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +28,6 @@
 		9A011A541C62DA77005A5E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A011A571C62DA77005A5E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A011A591C62DA77005A5E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A6354A81C63AA0300144593 /* Address+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Address+CoreDataProperties.h"; sourceTree = "<group>"; };
-		9A6354A91C63AA0300144593 /* Address+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Address+CoreDataProperties.m"; sourceTree = "<group>"; };
-		9A6354AA1C63AA0300144593 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
-		9A6354AB1C63AA0300144593 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
-		9A6354AC1C63AA0300144593 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		9A6354AD1C63AA0300144593 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
-		9A6354AE1C63AA0300144593 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		9A6354AF1C63AA0300144593 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,14 +44,6 @@
 		9A011A391C62DA77005A5E2E = {
 			isa = PBXGroup;
 			children = (
-				9A6354A81C63AA0300144593 /* Address+CoreDataProperties.h */,
-				9A6354A91C63AA0300144593 /* Address+CoreDataProperties.m */,
-				9A6354AA1C63AA0300144593 /* Address.h */,
-				9A6354AB1C63AA0300144593 /* Address.m */,
-				9A6354AC1C63AA0300144593 /* Person+CoreDataProperties.h */,
-				9A6354AD1C63AA0300144593 /* Person+CoreDataProperties.m */,
-				9A6354AE1C63AA0300144593 /* Person.h */,
-				9A6354AF1C63AA0300144593 /* Person.m */,
 				9A011A441C62DA77005A5E2E /* Data */,
 				9A011A431C62DA77005A5E2E /* Products */,
 			);
@@ -172,13 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6354B11C63AA0300144593 /* Address.m in Sources */,
 				9A011A4D1C62DA77005A5E2E /* ViewController.m in Sources */,
-				9A6354B31C63AA0300144593 /* Person.m in Sources */,
 				9A011A4A1C62DA77005A5E2E /* AppDelegate.m in Sources */,
-				9A6354B01C63AA0300144593 /* Address+CoreDataProperties.m in Sources */,
 				9A011A471C62DA77005A5E2E /* main.m in Sources */,
-				9A6354B21C63AA0300144593 /* Person+CoreDataProperties.m in Sources */,
 				9A011A531C62DA77005A5E2E /* Data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

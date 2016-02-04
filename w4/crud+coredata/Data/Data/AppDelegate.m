@@ -17,10 +17,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+# pragma mark - CREATE
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Person"
+                                                         inManagedObjectContext:self.managedObjectContext];
+    
+    NSManagedObject *newPerson = [[NSManagedObject alloc] initWithEntity:entityDescription
+                                     insertIntoManagedObjectContext:self.managedObjectContext];
     
     
+    [newPerson setValue:@"Adam" forKey:@"first"];
+    [newPerson setValue:@"Dahan" forKey:@"last"];
+    [newPerson setValue:@44 forKey:@"age"];
     
-//#pragma mark - READ
+    NSError *error = nil;
+    
+    if (![newPerson.managedObjectContext save:&error]) {
+        NSLog(@"Unable to save managed object context.");
+        NSLog(@"%@, %@", error, error.localizedDescription);
+    }
+
+    
+#pragma mark - READ
 //    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
 //    
 //    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:self.managedObjectContext];
@@ -41,9 +59,9 @@
 //        
 //        NSLog(@"2 - %@", person);
 //    }
-//
-//#pragma mark - UPDATE
-//    
+
+#pragma mark - UPDATE
+    
 //    NSManagedObject *person = (NSManagedObject *)[result objectAtIndex:0];
 //    
 //    [person setValue:@30 forKey:@"age"];
@@ -54,10 +72,10 @@
 //        NSLog(@"Unable to save managed object context.");
 //        NSLog(@"%@, %@", saveError, saveError.localizedDescription);
 //    }
-//    
-//    
-//#pragma mark - DELETE
-//
+    
+    
+#pragma mark - DELETE
+
 //    [self.managedObjectContext deleteObject:person];
 //    
 //    NSError *deleteError = nil;
@@ -66,7 +84,7 @@
 //        NSLog(@"Unable to save managed object context.");
 //        NSLog(@"%@, %@", deleteError, deleteError.localizedDescription);
 //    }
-//
+
     return YES;
 }
 
